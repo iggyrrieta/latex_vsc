@@ -1,0 +1,12 @@
+### VisualStudioCode ###
+# exclude everything
+**/.vscode
+
+# Compilation files
+**/log
+**/build
+**/install
+
+# Latex Compilation
+/out/*
+!/out/main.pdf
