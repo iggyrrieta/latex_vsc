@@ -5,9 +5,9 @@ This repository shows how to use `latex` on `Visual Studio Code`. I used a custo
 
 ## Requirements & installation
 
-> Tested on Ubuntu 20.04 but it should be very similar on other OS. Just download the right `texlive` file on `[https://ctan.javinator9889.com/systems/texlive/tlnet/](https://ctan.javinator9889.com/systems/texlive/tlnet/)` depending on your OS and then set the path properly.
+> Tested on Ubuntu 20.04 but it should be very similar on other OS. Just download the right `texlive` file on [https://ctan.javinator9889.com/systems/texlive/tlnet/](https://ctan.javinator9889.com/systems/texlive/tlnet/) depending on your OS and then set the path properly.
 
-1. Download `tex live` -->  `wget [http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz](http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz)`
+1. Download `tex live` -->  wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
 
 2. Unzip --> `tar zxvf install-tl-unx.tar.gz`
 
