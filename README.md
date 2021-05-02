@@ -73,11 +73,11 @@ Open Visual Studio Code and go to  `Latex Workshop` settings, modify `Out Dir` o
 
 This is the only settings you need to change. Once this is done you can work on your project and test your changes live using the following buttons:
 
-![buttons](/home/iggy/Documents/__MASTER_FREELANCER/latex_vsc/figures/buttons.png)
+![buttons](figures/buttons.png)
 
 Example:
 
-![example](/home/iggy/Documents/__MASTER_FREELANCER/latex_vsc/figures/example.png)
+![example](figures/example.png)
 
 From now on, every time you save your changes you will see that automatically applied on the `pdf` on your right
 
