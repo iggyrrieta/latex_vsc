@@ -2,6 +2,8 @@
 
 This repository shows how to use `latex` on `Visual Studio Code`. I used a custom simple `latex template`
 
+You can find a more extended documentation [here](https://iggyrrieta.medium.com/using-latex-on-visual-studio-code-eea538d69d90)
+
 
 ## Requirements & installation
 
