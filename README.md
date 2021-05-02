@@ -34,7 +34,9 @@ export PATH="/usr/local/texlive/2021/bin/x86_64-linux:$PATH"
 
 ### From terminal
 
-Go to  `~/path_to_project` on terminal:
+This is only necessary in case you want to use `latex` from terminal and compile changes that way. In that case you can make use of the `Makefile` created for that purpose.
+
+Go to  `~/path_to_this_project/latex_vsc` on terminal:
 
 1. Compile
 
@@ -53,9 +55,9 @@ make clean
 
 ### Using Visual Studio Code
 
-This is the simplest case scenario.
+This is the simplest case scenario. In this case, you can totally work with your latex project using `Latex-workshop` extension.
 
-Go to  `Latex Workshop` settings and modify `Out Dir` option:
+Open Visual Studio Code and go to  `Latex Workshop` settings, modify `Out Dir` option:
 
 1. This is the default state
 
@@ -66,3 +68,16 @@ Go to  `Latex Workshop` settings and modify `Out Dir` option:
 2. This is how it should be
 
 ![latex_outdir2](figures/latex_outdir2.png)
+
+
+
+This is the only settings you need to change. Once this is done you can work on your project and test your changes live using the following buttons:
+
+![buttons](/home/iggy/Documents/__MASTER_FREELANCER/latex_vsc/figures/buttons.png)
+
+Example:
+
+![example](/home/iggy/Documents/__MASTER_FREELANCER/latex_vsc/figures/example.png)
+
+From now on, every time you save your changes you will see that automatically applied on the `pdf` on your right
+
