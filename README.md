@@ -7,13 +7,16 @@ You can find a more extended documentation [here](https://iggyrrieta.medium.com/
 
 ## Requirements & installation
 
-> Tested on Ubuntu 20.04 but it should be very similar on other OS. Just download the right `texlive` file on https://ctan.javinator9889.com/systems/texlive/tlnet/ depending on your OS and then set the path properly.
+> Tested on Linux (Ubuntu `20.04`, `18.04`) and `Windows 10`. Just download the right `texlive` file on https://ctan.javinator9889.com/systems/texlive/tlnet/ depending on your OS and then set the path properly.
 
-1. Download `tex live` -->  http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+
+### Linux (Ubuntu)
+
+1. Download `tex live` -->  http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz 
 
 2. Unzip --> `tar zxvf install-tl-unx.tar.gz`
 
-3. Installation `sudo ./install-tl` (While installing select option `I`)
+3. Install `sudo ./install-tl` (While installing select option `I`)
 
 > This may take some time (around 45min in my case)
 
@@ -31,12 +34,24 @@ export PATH="/usr/local/texlive/2021/bin/x86_64-linux:$PATH"
 5. [VSC] Install extension `LaTeX Workshop` in VSC
 
 
+### Windows (10)
+
+1. Download `tex live` --> https://ctan.javinator9889.com/systems/texlive/tlnet/install-tl-windows.exe
+
+2. Install using executable
+
+> This may take some time
+   
+3. Install `Miktek` --> https://miktex.org/download  
+
 
 ## Usage
 
 ### From terminal
 
 This is only necessary in case you want to use `latex` from terminal and compile changes that way. In that case you can make use of the `Makefile` created for that purpose.
+
+#### Linux (Ubuntu)
 
 Go to  `~/path_to_this_project/latex_vsc` on terminal:
 
@@ -50,7 +65,27 @@ This will generate all files inside `out/` folder
 2. In case you want to remove all files in `out` folder
 
 ```bash 
-make clean
+make clean-linux
+```
+
+#### Windows (10)
+
+Windows cannot use `make` but in case you have `Visual Studio` you can use `nmake`.
+
+1. Find where inside the `Visual Studio` folder you have place the `nmake`
+
+2. Copy that path in the Windows Global environment path
+
+3. Go to the project and Compile:
+
+```bash
+nmake
+```
+
+4. In case you want to remove all files in `out` folder
+
+```bash 
+make clean-windows
 ```
 
 
